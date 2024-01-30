@@ -66,7 +66,13 @@ function Calculator({ workouts, allowSound }) {
         </div>
       </form>
       <section>
-        <button onClick={() => {}}>–</button>
+        <button
+          onClick={() => {
+            playSound();
+          }}
+        >
+          –
+        </button>
         <p>
           {mins < 10 && "0"}
           {mins}:{seconds < 10 && "0"}
